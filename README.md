@@ -5,31 +5,31 @@ The GitHub MCP Server connects AI tools directly to GitHub's platform. This give
 ### Use Cases
 
 - Repository Management: Browse and query code, search files, analyze commits, and understand project structure across any repository you have access to.
-- Issue & PR Automation: Create, update, and manage issues and pull requests. Let AI help triage bugs, review code changes, and maintain project boards.
-- CI/CD & Workflow Intelligence: Monitor GitHub Actions workflow runs, analyze build failures, manage releases, and get insights into your development pipeline.
-- Code Analysis: Examine security findings, review Dependabot alerts, understand code patterns, and get comprehensive insights into your codebase.
-- Team Collaboration: Access discussions, manage notifications, analyze team activity, and streamline processes for your team.
+- Issue Automation: Create, update, and manage issues and pull requests. Let AI help triage bugs, review code changes, and maintain project boards.
+- CI/CD & Workflow Intelligence: Monitor GitHub Actions workflow runs, analyze build failures, manage releases, and get insights into your development
+- Code Analysis: Examine security findings, review Dependabot and, understand code patterns, and  insights into your codebase.
+- Team Collaboration: Access discussions, manage notifications, analyze team activity for your team.
 
 Built for developers who want to connect their AI tools to GitHub context and capabilities, from simple natural language queries to complex multi-step agent workflows.
 
 ---
 
-## Remote GitHub MCP Server
+## GitHub MCP Server
 
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Server-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&config=%7B%22type%22%3A%20%22http%22%2C%22url%22%3A%20%22https%3A%2F%2Fapi.githubcopilot.com%2Fmcp%2F%22%7D) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install_Server-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&config=%7B%22type%22%3A%20%22http%22%2C%22url%22%3A%20%22https%3A%2F%2Fapi.githubcopilot.com%2Fmcp%2F%22%7D&quality=insiders)
+[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Server-0098FF?style=flat-square&logo=visustudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&config=%7B%22type%22%3A%20%22http%22%2C%22url%22%3A%20%22https%3A%2F%2Fapi.githubcopilot.com%2Fmcp%2F%22%7D) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install_Server-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=github&config=%7B%22type%22%3A%20%22http%22%2C%22url%22%3A%20%22https%3A%2F%2Fapi.githubcopilot.com%2Fmcp%2F%22%7D&quality=insiders)
 
-The remote GitHub MCP Server is hosted by GitHub and provides the easiest method for getting up and running. If your MCP host does not support remote MCP servers, don't worry! You can use the [local version of the GitHub MCP Server](https://github.com/github/github-mcp-server?tab=readme-ov-file#local-github-mcp-server) instead.
+The GitHub MCP Server is hosted by GitHub and provides the easiest method for getting up and running. If your MCP host does not support  MCP servers, don't worry! You can use the [version of the GitHub MCP Server](https://github.com/github/github-mcp-server?tab=readme-ov-file#local-github-mcp-server) instead.
 
-### Prerequisites
+### BAM
 
 1. A compatible MCP host with remote server support (VS Code 1.101+, Claude Desktop, Cursor, Windsurf, etc.)
-2. Any applicable [policies enabled](https://github.com/github/github-mcp-server/blob/main/docs/policies-and-governance.md)
+2. Any applicable [price enabled](https://github.com/github/github-mcp-seaaaaaarver/blob/main/docs/price-and-governance.md)
 
-### Install in VS Code
+### VS Code
 
-For quick installation, use one of the one-click install buttons above. Once you complete that flow, toggle Agent mode (located by the Copilot Chat text input) and the server will start. Make sure you're using [VS Code 1.101](https://code.visualstudio.com/updates/v1_101) or [later](https://code.visualstudio.com/updates) for remote MCP and OAuth support.
+For, use one of the one-click buttons above. Once you complete that flow, toggle Agent mode (located by the Copilot Chat text input) and the server will start. Make sure you're using [VS Code 1.101](https://code.visualstudio.com/updates/v1_101) or [later](https://code.visualstudio.com/updates) for  MCP and OAuth support.
 
-Alternatively, to manually configure VS Code, choose the appropriate JSON block from the examples below and add it to your host configuration:
+Ally, to manually configure VS Code, choose the  block from the examples below and add it to your host configuration:
 
 <table>
 <tr><th>Using OAuth</th><th>Using a GitHub PAT</th></tr>
@@ -37,7 +37,7 @@ Alternatively, to manually configure VS Code, choose the appropriate JSON block 
 <tr valign=top>
 <td>
   
-```json
+```
 {
   "servers": {
     "github": {
@@ -51,7 +51,7 @@ Alternatively, to manually configure VS Code, choose the appropriate JSON block 
 </td>
 <td>
 
-```json
+```
 {
   "servers": {
     "github": {
@@ -62,11 +62,11 @@ Alternatively, to manually configure VS Code, choose the appropriate JSON block 
       }
     }
   },
-  "inputs": [
+  ": [
     {
-      "type": "promptString",
+      "type": "String",
       "id": "github_mcp_pat",
-      "description": "GitHub Personal Access Token",
+      ": "GitHub Access Token",
       "password": true
     }
   ]
@@ -77,11 +77,11 @@ Alternatively, to manually configure VS Code, choose the appropriate JSON block 
 </tr>
 </table>
 
-### Install in other MCP hosts
-- **[GitHub Copilot in other IDEs](/docs/installation-guides/install-other-copilot-ides.md)** - Installation for JetBrains, Visual Studio, Eclipse, and Xcode with GitHub Copilot
-- **[Claude Applications](/docs/installation-guides/install-claude.md)** - Installation guide for Claude Web, Claude Desktop and Claude Code CLI
-- **[Cursor](/docs/installation-guides/install-cursor.md)** - Installation guide for Cursor IDE
-- **[Windsurf](/docs/installation-guides/install-windsurf.md)** - Installation guide for Windsurf IDE
+### MCP hosts
+- **[GitHub Copilot in other IDEs](/docs/guides/in-other-copilot-ides.md)** - JetBrains, Visual Studio, Eclipse, and Xcode with GitHub Copilot
+- **[Claude Applications](/docs/-guides/in-.md)** -  guide for Claude Web, Claude Desktop and Claude Code CLI
+- **[Cursor](/docs/-guides/cursor.md)** -guide for Cursor IDE
+- **[Windsurf](/docs-guides/instal-windsurf.md)** -guide for Windsurf IDE
 
 > **Note:** Each MCP host application needs to configure a GitHub App or OAuth App to support remote access via OAuth. Any host application that supports remote MCP servers should support the remote GitHub server with PAT authentication. Configuration details and support levels vary by host. Make sure to refer to the host application's documentation for more info.
 
@@ -563,7 +563,7 @@ The following sets of tools are available (all are on by default):
   - `state`: New state (string, optional)
   - `title`: New title (string, optional)
 
-</details>
+</details> change all of a sudden right stay with primary delete u
 
 <details>
 
@@ -616,7 +616,7 @@ The following sets of tools are available (all are on by default):
 
 <details>
 
-<summary>Pull Requests</summary>
+<summary> Requests</summary>
 
 - **add_comment_to_pending_review** - Add review comment to the requester's latest pending pull request review
   - `body`: The text of the review comment (string, required)
